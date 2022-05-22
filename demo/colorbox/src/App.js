@@ -8,6 +8,7 @@ import TodoList from './components/TodoList/TodoList';
 import PostFiltersForm from './components/PostFiltersForm';
 import CLock from './components/Clock';
 import BetterClock from './components/BetterClock';
+import MagicBox from './components/MagicBox';
 
 function App() {
     const [todoList, setTodoList] = useState([
@@ -99,9 +100,11 @@ function App() {
   return (
     <div className="app">
      <h1>React hooks - Clock</h1>
-     {showClock && <CLock/>}
+
+     <MagicBox/>
+     {/* {showClock && <CLock/>}
      <BetterClock/>
-     <button onClick={() => setShowClock(false)}>Hide clock</button>
+     <button onClick={() => setShowClock(false)}>Hide clock</button> */}
      {/* <TodoForm onSubmit={handleTodoFormSubmit}/> */}
      {/* <TodoList todos={todoList} onTodoClick={handleTodoClick}/> */}
      {/* <PostFiltersForm onSubmit={handleFiltersChange}/>
